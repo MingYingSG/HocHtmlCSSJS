@@ -1,11 +1,45 @@
-<html>
-    <head>
-        <title>My First HTML Page</title>
-    </head>
-    <body>
-        <h1>Hello, World!</h1>
-        <p>This is my first HTML page.</p>
-        <img src="image.jpg" alt="My Image" width
-    </body>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop của tôi - Trang chủ</title>
+  </head>
+  <body>
+    <!-- Đây là trang chủ của shop điện tử -->
+    <header>
+      <h1>Shop Điện Tử</h1>
+      <nav>
+        <a href="#dienthoai">Điện thoại</a> | <a href="#laptop">Laptop</a> |
+        <a href="#phukien">Phụ kiện</a>
+      </nav>
+    </header>
+    <!-- Danh sách sản phẩm -->
+    <main>
+      <section id="dienthoai">
+        <h2>Điện thoại</h2>
+        <p>Khám phá những sản phẩm nổi bật của chúng tôi:</p>
+        <ul>
+          <li>iPhone 15 Pro Max - 25 triệu</li>
+          <li>Samsung Galaxy S23 Ultra - 30 triệu</li>
+          <li>Xiaomi Mi 11 - 15 triệu</li>
+        </ul>
+      </section>
+      <!-- Thông tin liên hệ -->
+      <section id="lienhe">
+        <h2>Liên hệ với chúng tôi</h2>
+        <form>
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" /><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br><br>
+          <button type="submit">Gửi</button>
+        </form>
+      </section>
+    </main>
 
+    <footer>
+      <p>&copy; 2024 Shop Điện Tử. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
