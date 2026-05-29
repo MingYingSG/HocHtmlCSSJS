@@ -1,0 +1,112 @@
+/* Reset mac dinh va box sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Font chu va mau nen toan trang */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #da13a8;
+  line-height: 1.5;
+}
+/* Header */
+header {
+  background-color: #ee4d2d;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Sections */
+section {
+  background: rgb(238, 220, 236);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Navigation */
+nav a {
+  color: white;
+  text-decoration: none; /* Xoa gach chan link */
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Hieu ung gach chan khi hover */
+}
+
+/* Card san pham */
+
+.product-list {
+  list-style: none; /* Xoa cham dau dong */
+  padding: 20px;
+}
+
+.product-list li {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Do bong nhe*/
+}
+
+.product-list li strong {
+  color: #ee4d2d; /* Mau do cho ten san pham */
+  font-size: 18px;
+}
+
+/* Form lien he */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: 20px auto; /* Can giua form */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+    background-color: #ee4d2d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d73211; /* Mau do dam hon khi hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #aaa;
+    margin-top: 30px;
+}
