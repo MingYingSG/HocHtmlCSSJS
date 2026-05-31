@@ -47,23 +47,32 @@ nav a:hover {
 
 /* Card san pham */
 
+/* 1. Container: Biến ul thành hàng ngang, cho phép xuống dòng */
 .product-list {
-  list-style: none; /* Xoa cham dau dong */
+  display: flex;
+  flex-wrap: wrap;          /* Cho phép xuống dòng khi hết chỗ */
+  gap: 16px;                /* Khoảng cách đều giữa các card (thay margin) */
+  justify-content: center;  /* Căn giữa hàng */
   padding: 20px;
+  list-style: none;         /* Ẩn chấm đầu dòng */
 }
 
-.product-list li {
-  background: rgb(255, 255, 255);
-  border: 1px solid #ddd;
+/* 2. Item: Công thức responsive chuẩn e-commerce */
+.product-card {
+  flex: 1 1 220px;          /* ⭐ CÔNG THỨC VÀNG (giải thích bên dưới) */
+  max-width: 280px;         /* Không bị giãn quá to trên màn hình lớn */
+  background: white;
+  border: 1px solid #eee;
   border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Do bong nhe*/
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s; /* Hiệu ứng mượt */
 }
 
-.product-list li strong {
-  color: #ee4d2d; /* Mau do cho ten san pham */
-  font-size: 18px;
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }
 
 /* Form lien he */
